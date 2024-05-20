@@ -46,7 +46,7 @@ marca_iPhone = 1 if type_gaming == 'Sí' else 0
  # Botón para realizar predicción
 if st.button('Predecir Precio'):
     # Cargar el modelo entrenado
-    with open('TrabajoFinal_Grupo_1.pkl', 'rb') as file:
+    with open('TrabajoFinal_Grupo1.pkl', 'rb') as file:
         modelo = pickle.load(file)   
     
     # Crear DataFrame con las entradas
