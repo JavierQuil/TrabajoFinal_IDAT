@@ -24,23 +24,23 @@ st.image(image)
 # Controles de entrada para las características
 ram = st.number_input('RAM (GB)', min_value=1, max_value=64, value=8)
 almacenamiento = st.number_input('Almacenamiento (GB)', min_value=64, max_value=512, value=128)
-tipoCelular_BusinessPhone = st.selectbox('¿Es Para Negocios?', ['No', 'Sí'])
-tipoCelular_CameraPhone = st.selectbox('¿Es Para usarlo como Camara?', ['No', 'Sí'])
-tipoCelular_GamingPhone = st.selectbox('¿Es para Gamer?', ['No', 'Sí'])
-tipoCelular_Smartphone = st.selectbox('¿Es Smartphone?', ['No', 'Sí'])
-marca_Samsumg = st.selectbox('Desea Marca Samsumg', ['No', 'Sí'])
-marca_Xiaomi = st.selectbox('¿Desea Marca Xiaomi?', ['No', 'Sí'])
-marca_iPhone = st.selectbox('¿Desea Marca iPhone?', ['No', 'Sí'])
+tipoCelular_BusinessPhone = st.selectbox('¿Es de uso Empresarial?', ['No', 'Sí'])
+tipoCelular_CameraPhone = st.selectbox('¿Está pensado para usarse como cámara?', ['No', 'Sí'])
+tipoCelular_GamingPhone = st.selectbox('¿Está orientado a gamers?', ['No', 'Sí'])
+tipoCelular_Smartphone = st.selectbox('¿Lo desea para uso como teléfono inteligente?', ['No', 'Sí'])
+marca_Samsumg = st.selectbox('Desea un Equipo Samsumg', ['No', 'Sí'])
+marca_Xiaomi = st.selectbox('¿Desea un Equipo Xiaomi?', ['No', 'Sí'])
+marca_iPhone = st.selectbox('¿Desea un Equipo iPhone?', ['No', 'Sí'])
 
 
 # Convertir entradas a formato numérico
-TipoCelular_BusinessPhone = 1 if type_gaming == 'Sí' else 0
-tipoCelular_CameraPhone = 1 if type_notebook == 'Sí' else 0
-tipoCelular_GamingPhone = 1 if type_gaming == 'Sí' else 0
-tipoCelular_Smartphone = 1 if type_notebook == 'Sí' else 0
-marca_Samsumg = 1 if type_gaming == 'Sí' else 0
-marca_Xiaomi = 1 if type_notebook == 'Sí' else 0
-marca_iPhone = 1 if type_gaming == 'Sí' else 0
+TipoCelular_BusinessPhone = 1 if tipoCelular_BusinessPhone == 'Sí' else 0
+tipoCelular_CameraPhone = 1 if tipoCelular_CameraPhone == 'Sí' else 0
+tipoCelular_GamingPhone = 1 if tipoCelular_GamingPhone == 'Sí' else 0
+tipoCelular_Smartphone = 1 if tipoCelular_Smartphone == 'Sí' else 0
+marca_Samsumg = 1 if marca_Samsumg == 'Sí' else 0
+marca_Xiaomi = 1 if marca_Xiaomi == 'Sí' else 0
+marca_iPhone = 1 if marca_iPhone == 'Sí' else 0
 
 
  # Botón para realizar predicción
